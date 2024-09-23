@@ -1,0 +1,45 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BffTemplate.Domain\BffTemplate.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Features\CreditCards\Commands\" />
+    <Folder Include="Features\CreditCards\EventHandlers\" />
+    <Folder Include="Features\CreditCards\Queries\" />
+    <Folder Include="Features\BankAccounts\Commands\" />
+    <Folder Include="Features\BankAccounts\EventHandlers\" />
+    <Folder Include="Features\BankAccounts\Queries\" />
+    <Folder Include="Features\Customers\Commands\" />
+    <Folder Include="Features\Customers\EventHandlers\" />
+    <Folder Include="Features\Customers\Queries\" />
+    <Folder Include="Features\DebitCards\Commands\" />
+    <Folder Include="Features\DebitCards\EventHandlers\" />
+    <Folder Include="Features\DebitCards\Queries\" />
+    <Folder Include="Features\Reporting\Commands\" />
+    <Folder Include="Features\Reporting\EventHandlers\" />
+    <Folder Include="Features\Reporting\Queries\" />
+    <Folder Include="Features\Loans\Commands\" />
+    <Folder Include="Features\Loans\EventHandlers\" />
+    <Folder Include="Features\Loans\Queries\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="12.4.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="8.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="8.0.0" />
+	<PackageReference Include="FluentValidation" Version="11.9.1" />
+	<PackageReference Include="FluentValidation.AspNetCore" Version="11.3.0" />
+	<PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.9.1" />
+  </ItemGroup>
+
+</Project>
